@@ -1,0 +1,49 @@
+{
+  "config" : {
+    "userId": "",
+    "botToken" : ""
+  },
+  "tests" : [
+    {
+      "name": "main",
+      "steps": [
+        {
+          "asserts": [
+            { "type": "text", "index": 0, "value": "Hi" },
+            { "type": "button", "index": 0, "value": "Hi" }
+          ],
+          "response": { "type": "click", "index": 0 }
+        },
+        {
+          "asserts": [
+            { "type": "text", "index": 0, "value": "name?" }
+          ],
+          "response": { "type": "text", "value": "Valera" }
+        },
+        {
+          "asserts": [
+            { "type": "text", "index": 0, "value": "Hi, Valera" },
+            { "type": "text", "index": 1, "value": "Bye"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Failing body",
+      "steps": [
+        {
+          "asserts": [
+            { "type": "button", "index": 1, "value": "fcoff" }
+          ],
+          "response": { "type": "click", "index": 1 }
+        },
+        {
+          "asserts": [
+            { "type": "text", "index": 0, "value": "Ok, no problem" },
+            { "type": "text", "index": 0, "value": "Thank you, sir" }
+          ]
+        }
+      ]
+    }
+  ]
+}
