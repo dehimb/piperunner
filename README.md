@@ -1,3 +1,3 @@
 # piperunner
 
-Tests runner for [pipe.bot](pipe.bot)
+Tests runner for [pipe.bot](https://pipe.bot)
