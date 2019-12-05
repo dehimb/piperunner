@@ -1,3 +1,3 @@
 # piperunner
 
-Test runner for pipe.bot
+Tests runner for [pipe.bot](pipe.bot)
